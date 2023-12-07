@@ -1,0 +1,432 @@
+//Primary
+$Softred: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Darkdesaturatedcyang: hsl(167, 40%, 24%);
+$Darkblue: hsl(198, 62%, 26%);
+$Darkmoderatecyan: hsl(168, 34%, 41%);
+//Neutral
+$Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+$Verydarkgrayishblue: hsl(213, 9%, 39%);
+$Darkgrayishblue: hsl(232, 10%, 55%);
+$Grayishblue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+$mobile:"375px";
+
+@mixin max-width($width){
+    @media (max-width:$width) {
+        @content;
+    }
+    }
+
+body{
+    font-family:'Barlow';
+    font-size: 18px;}
+header{
+    border-style: none;
+    height: 800px;
+    background-image: url('images/photos/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include max-width($mobile) {
+        height: 538px;
+        margin-top: 0px;
+    }
+}
+.button{
+    font-family: 'Barlow';
+
+}
+.button_1{
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    color: $White;
+    font-family:'Barlow';
+    font-size: 18px;
+    margin-right: 5%;
+}
+.button_2{
+    border-radius: 30px;
+    border: none;
+    font-family: 'Fraunces';
+    font-size: 15px;
+    width:140px;
+    height: 56px;
+}
+h4{
+    margin : 0;
+    margin-bottom : 96.5px;
+    
+}
+
+.flex_center{
+    
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 0%;
+
+@include max-width($mobile) {
+    height: 538px;
+    background-position: center;
+}
+
+}
+
+.flexh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+   
+    @include max-width($mobile) {
+        display: block;
+    }
+
+
+}
+.flex_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex1{
+    color: $White;
+    font-family: 'Fraunces';
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: 8.75px;
+
+    @include max-width($mobile) {
+        font-size: 40px;
+        margin-top: 88px;
+        margin-bottom: 52px;
+    }
+}
+.logo1{
+    width: 170px;
+    height: 33px;
+    @include max-width($mobile) {
+        padding-bottom: 0px;
+        padding-top: 32px;
+        margin: 0px 24px;
+        &.lg{
+            @include max-width($mobile) {
+                width: 123.64px;
+                height: 24px;
+            }
+        }
+
+        }
+}
+.flex_second{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+p{
+    font-family: 'Barlow';
+    font-size: 18px;
+    color: #808397;
+
+}
+h5{
+    width: 445px;
+    font-family: 'Fraunces';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 49px;
+    color: #24303E;
+}
+h3{
+font-family: 'Fraunces';
+font-size: 15px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 1px;
+text-align: left;
+color: #24303E;
+text-decoration: underline yellow bold;
+}
+
+
+.flexbrand{
+    width: 50%;
+    .brandcenter{
+        width : 445px;
+        margin-top : 158px;
+        margin-left: 165px;
+    }
+}
+.flex_oeuf{
+    width: 50%;
+    .oeuf{
+        width : 100%;
+        height: 100%;
+    }
+}
+.flexkess{
+    @extend .flex_oeuf;
+    .kess{
+        @extend .oeuf;
+    }
+}
+.flexaudience{
+    @extend .flexbrand;
+    .Stand{
+        @extend .brandcenter;
+    }
+}
+.flex_third{
+    @extend .flex_second;
+}
+
+.design{
+    background-image: url('images/photos/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.flexcerise{
+    @extend .flex_second;
+
+}
+.all_cerise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    
+}
+.titre-gras{
+    font-weight: bold;
+}
+.titreD{
+    color: #24554A;
+    text-align: center;
+    font-family: Fraunces 9pt Soft;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    @extend .titre-gras;
+
+}
+.Photography{
+    background-image: url('images/photos/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.all{
+    @extend .all_cerise;
+}
+.titrePH{
+    @extend .titreD;
+    color:#052C3B;
+}
+.textC{
+color: #24554A;
+text-align: center;
+font-family: Barlow;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px; /* 168.75% */
+letter-spacing: -0.114px;
+width: 339px;
+padding-right: 30%;
+}
+.textPH{
+    @extend .textC;
+    color:#052C3B;
+
+}
+.test{
+color: #A7AAAD;
+text-align: center;
+font-family: Fraunces 9pt Soft;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 5px;
+}
+.container{
+    background: #FFFCF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding: 10%;
+
+}
+
+.grid-container{ 
+    background-color: #FFFCF8;
+    display: grid;
+    grid-template-rows: repeat(3, 96px);
+    grid-template-columns: repeat(3, 350px); 
+    gap: 20px;
+    place-content: center;
+    place-items: center;
+    
+    .photo_emily{
+        width: 72px;
+        height: 72px;
+        border-radius: 72px;
+        
+    }
+}
+
+.photo_Thomas{
+    @extend .photo_emily;
+}
+.photo_Jennie{
+    @extend .photo_emily
+}
+
+.text_emily{
+color: #5B636D;
+text-align: center;
+font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 177.778% */
+letter-spacing: -0.129px;
+width: 350px;
+}
+.text_Thomas{
+  @extend .text_emily;
+}
+.text_Jennie{
+    @extend .text_emily;
+}
+
+
+.titre_emily{
+color: #24303E;
+text-align: center;
+font-family: Fraunces 9pt Soft;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: 0.5;
+letter-spacing: -0.129px;
+width: 79px;
+height: 22px;
+
+}
+.titre_thomas{
+    @extend .titre_emily;
+    width: 97px;
+}
+.titre_jennie{
+    @extend .titre_emily;
+    width: 82px;
+}
+.job_emily{
+color: #A7AAAD;
+text-align: center;
+font-family: Barlow;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.1px;
+}
+.job_thomas{
+    @extend .job_emily;
+}
+.job_jennie{
+    @extend .job_emily;
+}
+
+
+.flex-container2{
+        display: flex;
+        .itemph{
+    width: 25%;
+}
+}
+
+
+
+.photo_milk{
+    width: 100%;
+}
+
+.photo_orange {
+    @extend .photo_milk;
+}
+
+.photo_cone {
+    @extend .photo_orange;
+}
+
+.photo_sugar{
+    @extend .photo_orange;
+}
+
+.container-foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:350px;
+
+
+}
+footer{
+    background: #90D4C6;
+}
+
+.box-sun{
+    width: 170px;
+    height: 33px;
+    flex-shrink: 0;
+    margin-bottom: 2%;
+    
+
+}
+
+.about{
+    color: #458D7E;
+font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 138.889% */
+letter-spacing: -0.129px;
+margin-right: 40%
+}
+.services{
+    @extend .about;
+}
+.Projects{
+    @extend .about;
+}
+.box-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    margin-bottom: 6%;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 164px;
+    height: 20px;
+
+}
+

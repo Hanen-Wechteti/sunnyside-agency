@@ -1,0 +1,356 @@
+body {
+  font-family: "Barlow";
+  font-size: 18px;
+}
+
+header {
+  border-style: none;
+  height: 800px;
+  background-image: url("images/photos/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 375px) {
+  header {
+    height: 538px;
+    margin-top: 0px;
+  }
+}
+
+.button {
+  font-family: "Barlow";
+}
+
+.button_1 {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Barlow";
+  font-size: 18px;
+  margin-right: 5%;
+}
+
+.button_2 {
+  border-radius: 30px;
+  border: none;
+  font-family: "Fraunces";
+  font-size: 15px;
+  width: 140px;
+  height: 56px;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 96.5px;
+}
+
+.flex_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+@media (max-width: 375px) {
+  .flex_center {
+    height: 538px;
+    background-position: center;
+  }
+}
+
+.flexh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+@media (max-width: 375px) {
+  .flexh {
+    display: block;
+  }
+}
+
+.flex_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Fraunces";
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 8.75px;
+}
+@media (max-width: 375px) {
+  .flex1 {
+    font-size: 40px;
+    margin-top: 88px;
+    margin-bottom: 52px;
+  }
+}
+
+.logo1 {
+  width: 170px;
+  height: 33px;
+}
+@media (max-width: 375px) {
+  .logo1 {
+    padding-bottom: 0px;
+    padding-top: 32px;
+    margin: 0px 24px;
+  }
+}
+@media (max-width: 375px) and (max-width: 375px) {
+  .logo1.lg {
+    width: 123.64px;
+    height: 24px;
+  }
+}
+
+.flex_second, .flexcerise, .flex_third {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+
+p {
+  font-family: "Barlow";
+  font-size: 18px;
+  color: #808397;
+}
+
+h5 {
+  width: 445px;
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 49px;
+  color: #24303E;
+}
+
+h3 {
+  font-family: "Fraunces";
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #24303E;
+  -webkit-text-decoration: underline yellow bold;
+          text-decoration: underline yellow bold;
+}
+
+.flexbrand, .flexaudience {
+  width: 50%;
+}
+.flexbrand .brandcenter, .flexaudience .brandcenter, .flexaudience .Stand {
+  width: 445px;
+  margin-top: 158px;
+  margin-left: 165px;
+}
+
+.flex_oeuf, .flexkess {
+  width: 50%;
+}
+.flex_oeuf .oeuf, .flexkess .oeuf, .flexkess .kess {
+  width: 100%;
+  height: 100%;
+}
+
+.design {
+  background-image: url("images/photos/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.all_cerise, .all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50%;
+}
+
+.titre-gras, .titreD, .titrePH {
+  font-weight: bold;
+}
+
+.titreD, .titrePH {
+  color: #24554A;
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.Photography {
+  background-image: url("images/photos/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.titrePH {
+  color: #052C3B;
+}
+
+.textC, .textPH {
+  color: #24554A;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 168.75% */
+  letter-spacing: -0.114px;
+  width: 339px;
+  padding-right: 30%;
+}
+
+.textPH {
+  color: #052C3B;
+}
+
+.test {
+  color: #A7AAAD;
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 5px;
+}
+
+.container {
+  background: #FFFCF8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  padding: 10%;
+}
+
+.grid-container {
+  background-color: #FFFCF8;
+  display: grid;
+  grid-template-rows: repeat(3, 96px);
+  grid-template-columns: repeat(3, 350px);
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+}
+.grid-container .photo_emily, .grid-container .photo_Jennie, .grid-container .photo_Thomas {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+}
+
+.text_emily, .text_Jennie, .text_Thomas {
+  color: #5B636D;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.129px;
+  width: 350px;
+}
+
+.titre_emily, .titre_jennie, .titre_thomas {
+  color: #24303E;
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0.5;
+  letter-spacing: -0.129px;
+  width: 79px;
+  height: 22px;
+}
+
+.titre_thomas {
+  width: 97px;
+}
+
+.titre_jennie {
+  width: 82px;
+}
+
+.job_emily, .job_jennie, .job_thomas {
+  color: #A7AAAD;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+}
+
+.flex-container2 {
+  display: flex;
+}
+.flex-container2 .itemph {
+  width: 25%;
+}
+
+.photo_milk, .photo_orange, .photo_sugar, .photo_cone {
+  width: 100%;
+}
+
+.container-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+footer {
+  background: #90D4C6;
+}
+
+.box-sun {
+  width: 170px;
+  height: 33px;
+  flex-shrink: 0;
+  margin-bottom: 2%;
+}
+
+.about, .Projects, .services {
+  color: #458D7E;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: -0.129px;
+  margin-right: 40%;
+}
+
+.box-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
+  margin-bottom: 6%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 164px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */
